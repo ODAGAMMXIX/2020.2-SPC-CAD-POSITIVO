@@ -1,5 +1,6 @@
 # 2020.2-SPC-CAD-POSITIVO
 Implementations PI-2020.2
+https://sway.office.com/uhcwEAsBbO3uca2a
 Disciplinas:
 •	ESTATÍSTICA DESCRITIVA – Prof. NANCI DE OLIVEIRA.
 •	ESTRUTURA DE DADOS – Prof. EDUARDO SAKAUE.
