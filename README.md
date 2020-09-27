@@ -155,7 +155,8 @@ Funcionais:
 |Importação de arquivo|R7 |		Minhas despesas/vendas ou crediário próprio|
 
 ## III - DIAGRAMA DE CASO DE USO
- {imagem}
+[![]( https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/DIAGRAMA-CASPS-DE-USO.jpg)](2020.2-SPC-CAD-POSITIVO/DIAGRAMA-CASPS-DE-USO.jpg)
+ 
 Não funcionais:
 •	Dashboard visualmente agradável, colorido;
 •	Web* (verificar se o usuário consumidor/requerente não ficaria mais fiel em app mobile);
@@ -176,6 +177,7 @@ Os quadrantes seguiriam a seguinte sugestão:
 |Q3|  Meus pontos;|
 |Q4|  Como melhorar?|
 
+[![](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/MOCK-UP.jpg)](2020.2-SPC-CAD-POSITIVO/MOCK-UP.jpg)
 
 Os dados são transformados em informações individualmente relevantes ao usuário antes da apresentação na tela.
 
