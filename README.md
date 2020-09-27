@@ -175,8 +175,12 @@ Os quadrantes seguiriam a seguinte sugestão:
 |Q2|  Meus pagamentos/ minhas vendas e meu crediário;|
 |Q3|  Meus pontos;|
 |Q4|  Como melhorar?|
+
+
 Os dados são transformados em informações individualmente relevantes ao usuário antes da apresentação na tela.
+
 Objetivando fidelização, as informações devem ser estimulantes ao progresso dentro da ferramenta, pelo ganho de vantagens: dicas para melhorar sua vida financeira e ganho de pontos;
+
 A monetização pode vir de diversas fontes, a saber: 
 
 - a informação do C.P. pode alimentar dados de geomarketing para empresas;
@@ -240,4 +244,4 @@ Nessa linha, podem sofrer alterações em razão de adiantamento ou atraso devid
 •	CONTROLE: correções finais;
 •	MODEL: correções finais;
 •	BANCO DE DADOS: correções finais;
-## eira de Soluções (13 de dezembro de 2020).
+## Feira de Soluções (13 de dezembro de 2020).
