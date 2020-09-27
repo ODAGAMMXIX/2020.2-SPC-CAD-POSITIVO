@@ -1,4 +1,6 @@
 ## i)	Disciplinas:
+![casos-de-uso](2020.2-SPC-CAD-POSITIVO/MOCK-UP.jpg)
+Format: ![Alt Text](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/a930ff133bc61c24934962f2971cc4d7ddff40ed/MOCK-UP.jpg)
 
 ESTATÍSTICA DESCRITIVA	Prof. NANCI DE OLIVEIRA
 ESTRUTURA DE DADOS	Prof. EDUARDO SAKAUE
