@@ -1,4 +1,7 @@
 ## i)	Disciplinas:
+![casos-de-uso](2020.2-SPC-CAD-POSITIVO/MOCK-UP.jpg)
+Format: ![Alt Text](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/a930ff133bc61c24934962f2971cc4d7ddff40ed/MOCK-UP.jpg)
+
 ESTATÍSTICA DESCRITIVA	Prof. NANCI DE OLIVEIRA
 ESTRUTURA DE DADOS	Prof. EDUARDO SAKAUE
 FUNDAMENTOS DE GESTÃO DE TECNOLOGIA DA INFORMAÇÃO	Prof. FABIANO SABHA
@@ -138,8 +141,7 @@ Gerar Relatórios	R6	Substituídos por painel de informações e “pílulas de 
 Importação de arquivo		Minhas despesas
 
 ## III - DIAGRAMA DE CASO DE USO
- ![DCU](2020.2-SPC-CAD-POSITIVO/DIAGRAMA-CASPS-DE-USO.jpg)
-[D.C.U.](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/DIAGRAMA-CASPS-DE-USO.jpg)
+ 
 Não funcionais:
 •	Dashboard visualmente agradável, colorido;
 •	Web* (verificar se o usuário consumidor/requerente não ficaria mais fiel em app mobile);
@@ -193,8 +195,7 @@ Nessa linha, podem sofrer alterações em razão de adiantamento ou atraso devid
 Sprint 00 (27 de setembro de 2020).
 •	Plano de Negócios com repositório de dados e documentação do projeto.
 •	Repositório de dados Github: <https://github.com/aerosdan/Valcode>"
-![MOCK-UP](2020.2-SPC-CAD-POSITIVO/MOCK-UP.jpg)
-[MOCK-UP](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/a930ff133bc61c24934962f2971cc4d7ddff40ed/MOCK-UP.jpg)
+ 
 ## Sprint 01 (17 de outubro de 2020).
 •	VIEW: Login, cadastrar usuário, Dashboard;
 •	CONTROLE: Cálculo de Score;
