@@ -1,6 +1,4 @@
 ## i)	Disciplinas:
-![casos-de-uso](2020.2-SPC-CAD-POSITIVO/MOCK-UP.jpg)
-Format: ![Alt Text](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/a930ff133bc61c24934962f2971cc4d7ddff40ed/MOCK-UP.jpg)
 
 ESTATÍSTICA DESCRITIVA	Prof. NANCI DE OLIVEIRA
 ESTRUTURA DE DADOS	Prof. EDUARDO SAKAUE
@@ -28,30 +26,43 @@ RA: 1460281923041
 <https://www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183/>
 ## I - Introdução:
 O presente documento visa apresentar a solução tecnológica proposta pela equipe para apresentar uma aplicação que gere valor aos usuários do Cadastro Positivo [C.P.], clientes da empresa SPC BRASIL.
+
 Utilizando a base de dados do Cadastro Positivo (Lei nº 12.414/2011 c/c LC nº 166/2019), a aplicação gerará valor pelo fato de:
+
 a)	Criar fidelização: conseguir manter seus usuários em sua plataforma, haja vista a presença de 4 “players” detentores da mesma base de dados;
+
 b)	Ser “monetizável”;
+
 c)	Aproveitar as características dos dados, agrupados em:
-i.	geolocalização;
+- i.	geolocalização;
 ii.	“Score” de Crédito;
 iii.	Investigação de CPF;
 iv.	Controle de Fraudes
+
 Aqui, serão identificados e classificados o objeto, “story cards”, requisitos, proposta da solução, destacando a usabilidade e mantendo backlog.
+
 A aplicação consiste num ambiente onde o usuário possa ter acesso aos seus dados do C.P., porém, por meio de algum atrativo adicional.
+
 A Interface Gráfica/VIEW propiciará a interação do usuário com a aplicação.
 ## II - Elicitação, Story Cards e Identificação de Requisitos
 ## II.I - Declaração do Problema.
 Nossa cliente fornece dados cruciais à existência da própria Economia, vez que servem para a concessão ou negação de crédito. 
+
 A partir de uma base de dados denominada Cadastro Positivo, seus usuários podem saber como estão posicionados no mercado de crédito, seja requerer crédito ou, qual o risco de conceder-se crédito a quem lhes peça.
+
 Os referidos dados são capturados de diversas fontes públicas e de caráter público, sobre histórico de crédito, definido na lei como “conjunto de dados financeiros e de pagamentos, relativos às operações de crédito e obrigações de pagamento adimplidas ou em andamento por pessoa natural ou jurídica.”
 Nesse passo, nossa cliente busca a distinção da concorrência através de diferenciais para seus usuários.
+
 Destaque-se a bilateralidade vez que a aplicação pode gerar valor tanto para quem pede, quanto para quem dá o crédito, v.g. no ato de uma compra parcelada, a parte compradora é a requerente; a vendedora é a concedente. Note-se que os usuários podem ser pessoas físicas ou jurídicas, eis que ambas podem estar em qualquer das duas posições.
+
 Por fim, note-se que há uma massa de pessoas que raramente constava na base de dados, por não participar de aquisições suscetíveis às consultas de crédito: os chamados “desbancarizados”. Sem conta bancária, são pessoas que participam anonimamente da Macroeconomia, por terem renda extremamente reduzida e utilizarem dinheiro em espécie (sem cartão de crédito, sem conta bancária, sem fintech de meios de pagamento eletrônico, sem salário formal). Agora, com a inserção de dados de contas de serviços públicos (utilities), pessoas cadastradas em empresas de energia elétrica, água, gás, telefonia dentre outros, passaram a constar na referida base de dados.
+
 Logo, a aplicação deverá trabalhar tais dados e gerar informação que, por sua vez, há de transformar-se em conhecimento, aplicável no cotidiano dos usuários.
+
 Nossa cliente declarou que a mera apresentação de dados na tela da aplicação não será considerada geração de valor; pode-se utilizar outras fontes públicas de dados; o primeiro passo é problematizar para sugerir soluções.
 ## II.II - Questões da Equipe.
 Diante deste cenário, são perguntas plausíveis:
-a)	O usuário que paga contas e parcelas maiores e é negativado por contas menores, merece reclassificação?
+- a)	O usuário que paga contas e parcelas maiores e é negativado por contas menores, merece reclassificação?
 b)	O chamado “bom pagador” que está num mal momento econômico, com estabilidade financeira, não mereceria uma classificação melhor do que aquele que já perdeu os meios de recuperar-se?
 c)	A massa de pessoas desbancarizadas estimada em 20 milhões de pessoas é economicamente significativa? 
 d)	Como o desbancarizado poderia ter o registro de suas compras parceladas no banco de dados? 
@@ -61,12 +72,12 @@ g)	Quais dados/débitos são considerados para o cálculo do “Score”, invest
 h)	É possível automatizar consultar do CPF do indivíduo em bancos de dados tais quais CAGED, INSS e outros órgãos ou entes?
 ## II.III - Brainstorming.
 O que pode ser utilizado?
-•	Dados primitivos: Nome, CPF, Endereço, local de consumo (georreferenciado e endereço), data, hora, valor, nome e ramo de negócio do estabelecimento.
+- Dados primitivos: Nome, CPF, Endereço, local de consumo (georreferenciado e endereço), data, hora, valor, nome e ramo de negócio do estabelecimento.
 •	Dados históricos: Somente pagamentos de parcelas de crédito já concedido; Não há histórico e frequência de consumo, horários e locais mais frequentes, tipos de consumo, quebra por categoria/período/local/valor, consumo mensal; renda presumida (somatória do quanto gasta e de quanto investe);
 •	Dados externos: Ainda não foram encontradas fontes de dados externos confiáveis para somar ao C.P. Descartou-se fontes oficiais pela dificuldade de segurança dos dados individualizados (CAGED, INSS e outros órgãos ou entes públicos: pensionista, aposentado, (des)empregado?).
 O que pode ser apresentado?
-### a)	Nova quebra de faixas de risco para o crédito (em oposição à classificação binária):
-i.	bom pagador sem negativações c/c consumo e renda altas;
+##### a)	Nova quebra de faixas de risco para o crédito (em oposição à classificação binária):
+- i.	bom pagador sem negativações c/c consumo e renda altas;
 ii.	bom pagador de grandes débitos com pequenas moras;
 iii.	bom pagador por faixas de valores;
 iv.	bom pagador com renda comprometida;
@@ -74,13 +85,13 @@ v.	bom pagador que está em má fase mas não perdeu sua fonte de renda;
 vi.	desbancarizados que já consomem baseado em crédito informal / crediário próprio;
 vii.	mal pagador c/c fonte de renda insuficiente;
 
-### b)	Serviços que podem ser oferecidos aos desbancarizados:
-i.	Onde podem comprar parcelado / microcrédito (ato voluntário do comércio ou fintech dedicada – mercado: 20 milhões de pessoas)?
+#####  b)	Serviços que podem ser oferecidos aos desbancarizados:
+- i.	Onde podem comprar parcelado / microcrédito (ato voluntário do comércio ou fintech dedicada – mercado: 20 milhões de pessoas)?
 ii.	Análise de risco para microcrédito;
 iii.	Microcrédito/milhagens/pontos como impulso inicial no histórico de crédito;
 
-### c)	Gamificação (opções):
-i.	Classificação do usuário por:
+#####  c)	Gamificação (opções):
+- i.	Classificação do usuário por:
 i.i níveis de Score;
 i.ii. progressão de fases com simulações de meta/objetivos;
 i.iii. pontos;
@@ -89,59 +100,62 @@ i.v. Menu “Helper” ou Assistente com dicas para melhorar sua classificação
 i.vi. Utilizar o Score para transformá-lo e mostrar progressão no gráfico;
 i.vii. Linha do tempo x gastos;
 i.viii. “Indique um amigo e ganhe (...)”;
-ii.	Classificação dos gastos:
+
+- ii.	Classificação dos gastos:
 ii.i. Espécies de parcelas pagas pelo usuário.
 ii.ii. Espécies de gastos cadastrados pelo usuário.
 
-iii.	Informações Básicas: 
+- iii.	Informações Básicas: 
 iii.i. Para que serve o Score e outras funções educativas
 iii.ii. “Quando vou me livrar das parcelas”?
 iii.iii. “Como faço para pagar mais rápido e liberar meu orçamento”?
 
-### d)	Momento da Negociação: Acompanhamento da flutuação do Score com sugestão do momento para oferecer acordo e evitar a judicialização (bilateral);
+##### d)	Momento da Negociação: Acompanhamento da flutuação do Score com sugestão do momento para oferecer acordo e evitar a judicialização (bilateral);
 
 O que não pode ser apresentado?
-a)	Itinerário do Consumo: Gráfico de “onde eu consumo ao longo do dia ou do mês” para requerentes e “qual o fluxo de consumidores em determinado local” para concedentes;
+- a)	Itinerário do Consumo: Gráfico de “onde eu consumo ao longo do dia ou do mês” para requerentes e “qual o fluxo de consumidores em determinado local” para concedentes;
 b)	Informação sobre despesas não cadastradas;
 c)	Sugestão de consumo em novos estabelecimentos;
 # II.IV - Story Cards:
-•	Clicar num botão, dentro do ambiente já disponível da cliente Senão: Login (usuário e senha);
+- Clicar num botão, dentro do ambiente já disponível da cliente Senão: Login (usuário e senha);
 •	Abrir DASHBOARD;
 •	Ver meu próprio Score (calculado pela aplicação), minha classificação; dicas para melhorar e ofertas (opções gamificadas);
 •	Alterar a configurações de visibilidade de dados pessoais:
-o	Permitir que concedentes vejam meu Score;
-o	Permitir que concedentes vejam meu Histórico de Pagamentos;
-o	Bloquear determinada empresa;
-o	Confirmar bloqueio da determinada empresa;
-•	Informar orçamento compartilhado (casal, família, etc.) com outro usuário;
-•	Cadastrar meus pagamentos (pelo requerente), substituindo planilhas;
+    -  Permitir que concedentes vejam meu Score;
+    -  Permitir que concedentes vejam meu Histórico de Pagamentos;
+    -  Bloquear determinada empresa;
+    -  Confirmar bloqueio da determinada empresa;
+    -  Informar orçamento compartilhado (casal, família, etc.) com outro usuário;
+
+- Cadastrar meus pagamentos (pelo requerente), substituindo planilhas;
 •	Cadastrar minhas vendas e meu crediário (pelo concedente);
 •	Confirmar pagamentos registrados pelos vendedores), substituindo planilhas;
 •	Importar arquivo com minhas despesas;
 •	Visualizar meus pontos ganhados por:
-o	Cadastrar minhas compras/vendas;
-o	Permitir ampliar visibilidade dos meus dados;
-•	Visualizar opções de interação gamificadas (opções):
-o	Minhas vantagens SPCBrasil;
-o	Dicas de como melhorar meu Score;
-o	Dicas para liberar parte do meu orçamento;
-o	Dicas de educação financeira/“pílulas“ de informação (“Muito bem, você está aumentando seu Score! Já pensou em economizar 2 pizzas por mês e formar sua reserva de emergência em x meses?”);
-o	Top 10 dos itens de maior gastos por categoria (alimentação, vestuário, educação, transporte, telefonia etc).
-o	Grafico de Pizza com o consumo;
-o	Sistema de pontos
+    -   Cadastrar minhas compras/vendas;
+    -   Permitir ampliar visibilidade dos meus dados;
+- Visualizar opções de interação gamificadas (opções):
+    -   Minhas vantagens SPCBrasil;
+    -   Dicas de como melhorar meu Score;
+    -   Dicas para liberar parte do meu orçamento;
+    -   Dicas de educação financeira/“pílulas“ de informação (“Muito bem, você está aumentando seu Score! Já pensou em economizar 2 pizzas por mês e formar sua reserva de emergência em x meses?”);
+    -   Top 10 dos itens de maior gastos por categoria (alimentação, vestuário, educação, transporte, telefonia etc).
+    -   Grafico de Pizza com o consumo;
+    -   Sistema de pontos
 # II.V - Especificação de Requisitos (em ordem de prioridade    ):
 Funcionais:
-NOME	Cod	Descrição
-Cadastrar usuário	R1	O sistema deve permitir inserir novos projetos e tarefas relacionadas aos mesmos
-Conceder, estender ou revogar acesso aos meus dados;	R2	Diferentes níveis de acessos aos meus dados, com recompensa pelos compartilhamentos 
-Calcular Score	R3	com novas faixas de “bons pagadores”, com dados externos disponíveis;
-Cadastrar transações	R4	Requerente pode cadastrar seus pagamentos; Concedente pode cadastrar suas vendas e crediário;
-Armazenar em banco de dados	R5	dados do C.A. serão importados pelo banco de dados, que sofrerá acréscimos oriundos da interação do usuário.
-Gerar Relatórios	R6	Substituídos por painel de informações e “pílulas de conhecimento”;
-Importação de arquivo		Minhas despesas
+|NOME 	| Cod| 	Descrição |
+| ------ | ------ | ------ |
+|Cadastrar usuário|	R1|	[O sistema deve permitir inserir novos projetos e tarefas relacionadas aos mesmos] [PlDb] |
+|Conceder, estender ou revogar acesso aos meus dados|	R2|	Diferentes níveis de acessos aos meus dados, com recompensa pelos compartilhamentos |
+|Calcular Score|	R3|	com novas faixas de “bons pagadores”, com dados externos disponíveis|
+|Cadastrar transações|	R4|	Requerente pode cadastrar seus pagamentos; Concedente pode cadastrar suas vendas e crediário|
+|Armazenar em banco de dados|	R5|	dados do C.A. serão importados pelo banco de dados, que sofrerá acréscimos oriundos da interação do usuário|
+|Gerar Relatórios|	R6	|Substituídos por painel de informações e “pílulas de conhecimento”|
+|Importação de arquivo|R7 |		Minhas despesas/vendas ou crediário próprio|
 
 ## III - DIAGRAMA DE CASO DE USO
- 
+ {imagem}
 Não funcionais:
 •	Dashboard visualmente agradável, colorido;
 •	Web* (verificar se o usuário consumidor/requerente não ficaria mais fiel em app mobile);
@@ -155,14 +169,17 @@ Não funcionais:
 A tela de entrada apresentaria um DASHBOARD com 4 quadrantes e um círculo ao meio.
 O círculo apresenta o Score naquele momento.
 Os quadrantes seguiriam a seguinte sugestão: 
-Q1 - configurações de visibilidade de dados pessoais;
-Q2 - Meus pagamentos/ minhas vendas e meu crediário;
-Q3 - Meus pontos;
-Q4 – Como melhorar?
+|Quadrante 	| 	Descrição |
+| ------ | ------ |
+|Q1 | Configurações de visibilidade de dados pessoais;|
+|Q2|  Meus pagamentos/ minhas vendas e meu crediário;|
+|Q3|  Meus pontos;|
+|Q4|  Como melhorar?|
 Os dados são transformados em informações individualmente relevantes ao usuário antes da apresentação na tela.
 Objetivando fidelização, as informações devem ser estimulantes ao progresso dentro da ferramenta, pelo ganho de vantagens: dicas para melhorar sua vida financeira e ganho de pontos;
 A monetização pode vir de diversas fontes, a saber: 
-•	a informação do C.P. pode alimentar dados de geomarketing para empresas;
+
+- a informação do C.P. pode alimentar dados de geomarketing para empresas;
 •	a rede de concedentes podem oferecer vantagens para trocar os pontos; 
 •	novos produtos a partir de dados cadastrados pelos usuários;
 •	fintechs: oferta de microcrédito direto pelo meio de pagamento, sem banco, aos desbancarizados;
@@ -170,14 +187,22 @@ A monetização pode vir de diversas fontes, a saber:
 Entregar uma aplicação inovadora, lucrativa, socialmente responsável, amigável ao meio ambiente e de governança transparente dentro dos limites de um produto minimamente viável (M.V.P.).
 Usabilidade:
 ## V - HEURISTICAS
-•	Correspondência entre o sistema e o mundo real.
+**•	Correspondência entre o sistema e o mundo real.**
+
 O sistema possuirá uma interface intuitiva com menus e botões de ações de fácil entendimento, utilizando nomenclatura familiar aos seus usuários. As ações tais quais liberar acesso a dados, cadastrar um pagamento/venda, ver dicas serão realizadas por meio de botões/opções de menu sinalizados por check-boxes ou botões nominados com os verbos “cadastrar”, "deletar", "sim/não" ou simplesmente “+”, “-”, “->”. Utilização de vocabulário simples da Língua Portuguesa e, balões explicativos onde necessário, conduzindo os caminhos para que a utilização seja fluída.
-•	Controle pelo usuário e liberdade de escolhas.
+
+**•	Controle pelo usuário e liberdade de escolhas.**
+
 Com o sistema intuitivo, o usuário possuirá uma certa liberdade no sistema, minimizando o número de cliques e de erros, pois conseguirá identificar claramente as funcionalidades e comandos disponíveis, sem precisar decorar procedimento algum. Sendo a facilidade em garantir ou revogar acesso aos seus dados, segundo a Lei Geral de Proteção de Dados e regras de conforto e facilitação, para que a ferramenta não se transforme em outro dever a ser esquecido.
+
 Ao acessar o sistema com capslock ligado o sistema avisará o usuário (campo de senha é case sensitive).
-•	Design estético minimalista
+
+**•	Design estético minimalista**
+
 Com design intuitivo o sistema exibirá informações úteis e processadas pelas regras de negócio da aplicação. Mais informação em menos cliques; código de cores já testados pela neurociência (vermelho: quente ou perigo, amarelo: atenção; azul: frio ou sob controle.
-•	Ajuda e documentação
+
+**•	Ajuda e documentação**
+
 A interface será intuitiva para que o usuário tenha uma melhor experiência e liberdade em usar o sistema, com balões explicativos onde necessário.
 As cores da plataforma e a interface amigável reduzirão as dúvidas. Questões mais elaboradas poderão aparecer na forma de “pílulas de informação”.
 Residualmente, pode ser utilizado o benchmarking de novos menus de ajuda de fintechs e outras ferramentas.
@@ -192,7 +217,7 @@ Residualmente, pode ser utilizado o benchmarking de novos menus de ajuda de fint
 Abaixo apresenta-se o cronograma de entregas seguindo a metodologia de Engenharia de Software (camadas visual, controle e modelo com banco de dados).
 As entregas futuras são o backlog do projeto (compilação de tarefas aprovadas, necessárias à conclusão do projeto);
 Nessa linha, podem sofrer alterações em razão de adiantamento ou atraso devido a adaptações do desenvolvimento à realidade, aprovação do cliente e dificuldades encontradas.
-Sprint 00 (27 de setembro de 2020).
+## Sprint 00 (27 de setembro de 2020).
 •	Plano de Negócios com repositório de dados e documentação do projeto.
 •	Repositório de dados Github: <https://github.com/aerosdan/Valcode>"
  
