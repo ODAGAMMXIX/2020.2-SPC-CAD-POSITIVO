@@ -87,11 +87,18 @@ Objetivo 03:  segurança ao próximo estabelecimento, para decidir se pode vende
 ## III - ALCANCE DA FERRAMENTA
 ![alcance](https://github.com/aerosdan/Valcode/blob/sprint02-nov-08/Imagens/Alcance_escopo_valscore-1.0.jpg?raw=true"Casos-de-Uso")
 
-## IV - CÓDIGO: CONSULTA E ALTERA NO BANCO DE DADOS
+## IV - ANGULAR: PRIVACIDADE E TRATAMENTO DE ERROS (LOGIN, ENVIO DA REQUISIÇÃO: ***session storage***)
+![PRIVACIDADE](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/201129-SPRINT-03/PRIVACIDADE%2BTRATAMENTO-ERROS-01.jpeg?raw=true"session-storage")
+
+## IV.I - ANGULAR: PRIVACIDADE E TRATAMENTO DE ERROS (RESPOSTA À REQUISIÇÃO: ***session storage***)
+![PRIVACIDADE](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/201129-SPRINT-03/PRIVACIDADE%2BTRATAMENTO-ERROS-02.jpeg?raw=true"session-storage")
+
+## V - CÓDIGO: CONSULTA E ALTERA NO BANCO DE DADOS
 ![Consulta-Altera](https://github.com/aerosdan/Valcode/blob/sprint02-nov-08/Imagens/CONSULTA-ALTERA-DADOS.jpeg?raw=true"Consulta-Altera")
 
-## V - CÓDIGO: IMPORTA ARQUIVOS CSV, TRATA DADOS E INSERE NO BANCO DE DADOS
+## V.I - CÓDIGO: IMPORTA ARQUIVOS CSV, TRATA DADOS E INSERE NO BANCO DE DADOS
 ![Importa-CSVl](https://github.com/aerosdan/Valcode/blob/sprint02-nov-08/Imagens/IMPORTA-ARQUIVO-CODIGO.jpeg?raw=true"Importa-CSV")
+
 
 ## VI - MODELO-RELACIONAL DO BANCO DE DADOS
 ![Modelo-Relacional](https://github.com/aerosdan/Valcode/blob/sprint02-nov-08/Imagens/MODELO-RELACIONAL-VALSCORE.jpg?raw=true"Casos-de-Uso")
@@ -103,9 +110,13 @@ Objetivo 03:  segurança ao próximo estabelecimento, para decidir se pode vende
 - Linguagem de programação Java;
 - Linguagem de programação Java Script;
 - Linguagem de marcação CSS, HTML;
-- CSS framework bootstrap;
+- CSS framework Bootstrap;
+- CSS framework Angular;
+- Postman;
+- Insomnia;
+- Data Grip;
 - Banco de Dados Oracle;
-- Método Scrum;
+- Metodologia Scrum;
 
 ## XIX - Cronograma e Backlog do Projeto (Em Ordem de Prioridade).
 Abaixo apresenta-se o cronograma de entregas seguindo a metodologia de Engenharia de Software (camadas visual, controle e modelo com banco de dados).
@@ -129,22 +140,24 @@ Nessa linha, podem sofrer alterações em razão de adiantamento ou atraso devid
 - BANCO DE DADOS: INÍCIO DML;
 
 #### Sprint 02 (08 de novembro de 2020).
-- **VIEW:** Tela de **permissões** de acesso a dados do usuário;
-- **VIEW:** Tela de sumário de **pontos e trocas** possíveis;
-- **VIEW:** Tela de **Educação Financeira** e Desafios;
-- **VIEW:** Cadastro de Transações para **Desbancarizados**;
-- **CONTROLLER:** **Importação** de Arquivo CSV com **normalização de dados**;
-- **MODEL:** registra **transações** no banco de dados;
-- **BANCO DE DADOS:** Modelagem e Documentação;
+- VIEW: Tela de **permissões** de acesso a dados do usuário;
+- VIEW: Tela de sumário de **pontos e trocas** possíveis;
+- VIEW: Tela de **Educação Financeira** e Desafios;
+- VIEW: Cadastro de Transações para **Desbancarizados**;
+- CONTROLLER: **Importação** de Arquivo CSV com **normalização de dados**;
+- MODEL: registra **transações** no banco de dados;
+- BANCO DE DADOS: Modelagem e Documentação;
 
 #### Sprint 03 (29 de novembro de 2020).
-- VIEW: Apresenta informações e “pílulas de conhecimento”, importa dados de transações, adaptações das VIEWs desenvolvidas na Sprint 02;
-- CONTROLE: Realiza cálculos e devolve informação para VIEW;
-- CONTROLE: Conceder, estender ou revogar acesso aos meus dados
-- MODEL: Busca dados para apresentação na VIEW, insere dados importados no banco;
-- MODEL: registra dados de login;
-- BANCO DE DADOS: Modelagem para os itens acima (novas tabelas);
-- BANCO DE DADOS: Modelagem DCL;
+- **VIEW 01:** Login por CPF (LGPD);
+- **VIEW 02:** Interação com BACK-END (envio de **requisição**);
+- **VIEW 03:** Controle sobre **meus dados**;
+- **VIEW 04:** **Tratamento de Erros** (Login);
+- **CONTROLLER:** API de **importação** do DATASET externo;
+- **MODEL:** **Filtros** por critérios disponíveis na base de dados;
+- **BANCO DE DADOS:** Novas Entidades [**usuários** + matérias no domínio da aplicação (Helper)]; 
+- **DOCUMENTAÇÃO:** Documentação método-a-método (via **POSTMAN**);
+
 
 #### Apresentação Final e Avaliação de Soft Skills (06 de dezembro de 2020).
 - VIEW: correções finais;
