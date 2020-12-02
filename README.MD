@@ -4,10 +4,10 @@
 
 | Descrição | Vídeo                                       |
 |--------|---------------------------------------------|
-| Sprint 00      | DANIEL, FAVOR COLOCAR VÍDEO|
+| Sprint 00      | |
 | Sprint 01      | https://www.youtube.com/watch?v=lRlFIdKHmjo |
 | Sprint 02      | https://www.youtube.com/watch?v=o_1Iov4ZG-o |
-| Sprint 03      | DANIEL, FAVOR COLOCAR VÍDEO |
+| Sprint 03      | https://youtu.be/4Vy1te5JutM |
 | BONUS Sprint 02 (Desbancarizados) | https://www.youtube.com/watch?v=dbQA__z_t1k||
 
 #### DIFERENCIAIS DA PLATAFORMA:
