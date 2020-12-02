@@ -80,6 +80,11 @@ Objetivo 03:  segurança ao próximo estabelecimento, para decidir se pode vende
 ![HELPER](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/201129-SPRINT-03/TELA11-HELPER-MATERIAS.jpeg?raw=true"Helper")
 ***CPF: chave-mestra dentro do código***
 
+#### 9) CONTROLE DE ACESSO AOS DADOS (DO E PELO USUÁRIO):
+![MEUS-DADOS](https://github.com/ODAGAMMXIX/2020.2-SPC-CAD-POSITIVO/blob/master/201129-SPRINT-03/TELA12-MEUS-DADOS-PRIVACIDADE-2.jpeg?raw=true"MEUS-DADOS")
+***Poder ao usuário e recompensas pelos seus dados***
+
+
 ## II - DIAGRAMA DE CASO DE USO
 ![Casos-de-Uso](https://github.com/aerosdan/Valcode/blob/sprint02-nov-08/Imagens/DIAGRAMA-CASOS-DE-USO-v.2.jpg?raw=true"Casos-de-Uso")
 
