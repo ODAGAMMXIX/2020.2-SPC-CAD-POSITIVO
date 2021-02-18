@@ -15,9 +15,6 @@ RA:1460281923049
 RA:1460281923005
 <https://www.linkedin.com/in/daniel-delgado-274096194/>
 •	Jessica Isri
-•	Fabio Odaguiri
-RA: 1460281923008
-<https://www.linkedin.com/in/fabioodaguiri/>
 •	Nathan Augusto
 RA:1460281923027
 <https://www.linkedin.com/mwlite/in/nathan-naressi-b529081b2>
