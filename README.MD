@@ -9,6 +9,10 @@
 | Sprint 03      | https://youtu.be/ZA9fqQFdEik |
 | BONUS Sprint 02 (Desbancarizados) | https://www.youtube.com/watch?v=dbQA__z_t1k||
 
+ 
+- MACHINE LEARNING ===> ESTUDAMOS E DECIDIMOS NÃO USAR - MOTIVAR;
+- 
+
 #### DIFERENCIAIS DA PLATAFORMA:
 - **MONETIZAÇÃO:** TODAS AS FUNÇÕES SÃO MONETIZÁVEIS;
 - **FIDELIZAÇÃO** pela **GAMIFICAÇÃO** POR TODO O AMBIENTE EM BUSCA DA FIDELIZAÇÃO;
